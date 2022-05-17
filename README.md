@@ -18,5 +18,6 @@ COMPARED_CURRENCY = RUB, EUR, CNY или INR
 - JavaScript
 - Twitter Bootstrap
 - HTML
+- Thymeleaf
 - Maven
 - Spring Cloud OpenFeign
