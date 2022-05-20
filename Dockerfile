@@ -1,5 +1,5 @@
 FROM openjdk:11
 
-COPY target/giphy.jar /giphy-app.jar
+COPY /giphy-appV1.jar /giphy-app.jar
 
 CMD [ "java", "-jar", "/giphy-app.jar" ]

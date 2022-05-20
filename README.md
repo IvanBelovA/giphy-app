@@ -1,3 +1,4 @@
+
 ## Описание
 
 Данный сервис, обращается к сервису курсов валют, и отображает gif:<br>
@@ -21,3 +22,25 @@ COMPARED_CURRENCY = RUB, EUR, CNY или INR
 - Thymeleaf
 - Maven
 - Spring Cloud OpenFeign
+- Docker
+
+## Запуск
+
+ 
+Запуск jar находясь в корне проекта:
+
+> java -jar giphy-appV1.jar
+
+Docker:
+Для создания образа Docker, находясь в корне проекта:  
+> docker build -t ivanbelov/giphy-docker:v1.0 . 
+> 
+Запуск контейнера с образом:   
+> docker run -d -p 9000:9000 ivanbelov/giphy-docker:v1.0 
+> 
+Получить образ с DockerHub:  
+>docker pull ivanbelov/giphy-docker:v1.0 
+
+Остановить контейнер:
+> docker stop CONTAINER_ID
+
